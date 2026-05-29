@@ -1,13 +1,15 @@
 
-let temperature = 15;
-if (temperature < 0) {
-    console.log("ყინავს!");
-} else if (temperature >= 0 && temperature <= 10) {
-    console.log("ძალიან ცივა");
-} else if (temperature >= 11 && temperature <= 20) {
-    console.log("ცივა");
-} else if (temperature >= 21 && temperature <= 30) {
-    console.log("თბილა");
-} else if (temperature > 30) {
-    console.log("ცხელა!");
+const array = [10, 20, 30, 40, 50];
+const valueToFind = 30;
+let isFound = false;
+for (let i = 0; i < array.length; i++) {
+    if (array[i] === valueToFind) {
+        isFound = true; 
+        break;          
+    }
+}
+if (isFound) {
+    console.log("რიცხვი ნაპოვნია");
+} else {
+    console.log("რიცხვი არ მოიძებნა");
 }
